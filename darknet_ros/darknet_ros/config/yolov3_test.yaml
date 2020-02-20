@@ -1,0 +1,16 @@
+yolo_model:
+
+  config_file:
+    name: yolo-obj-v3.cfg
+  weight_file:
+    name: yolo-obj-v3_final.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - away
+      - standing
+      - talking
+      - towards
+      
+

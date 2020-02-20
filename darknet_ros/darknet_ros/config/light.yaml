@@ -1,0 +1,13 @@
+yolo_model:
+
+  config_file:
+    name: light.cfg
+  weight_file:
+    name: light.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - HeadLight
+
+
