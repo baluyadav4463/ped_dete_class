@@ -57,13 +57,13 @@ def image_callback(data):
   measurement = drive_run.run(image)
   measurement = measurement[0]
   if measurement[0] == max(measurement):
-    measurements.append('away')
+    measurements.append('not_crossing')
   elif measurement[1] == max(measurement):
     measurements.append('standing')
   elif measurement[2] == max(measurement):
     measurements.append('talking')
   else:
-    measurements.append('towards')
+    measurements.append('crossing')
   #print('standing')
   
   #image = cv2.resize(crop_img, (18, 64))
